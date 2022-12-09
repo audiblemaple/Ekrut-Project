@@ -117,7 +117,7 @@ public class ChatClient extends AbstractClient
     {
     	openConnection();//in order to send more than one message
        	awaitResponse = false;
-        Message msg = new Message(message, MessageFromClient.LOGIN_REQUEST); // TODO: change the login request to generic requests.
+        Message msg = new Message(message, MessageFromClient.LOGIN_REQUEST); // TODO: change the login to a more generic one...
 
         try{
             sendToServer(msg);
